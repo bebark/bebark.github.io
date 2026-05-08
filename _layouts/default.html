@@ -66,6 +66,7 @@ I study how to make synthetic data more reliable and effective for scaling AI tr
               <h2>News</h2>
               <p>
                 <ul>
+                  <li> New preprint: <a href="https://arxiv.org/abs/2605.05638">Scaling Pretrained Representations Enables Label-Free Out-of-Distribution Detection Without Fine-Tuning</a>. (May 2026) </li>
                   <li> <a href="https://arxiv.org/abs/2510.01456">SCOPED: Score-Curvature Out-of-distribution Proximity Evaluator for Diffusion</a> was accepted to <a href="https://iclr.cc/Conferences/2026">ICLR 2026</a>. (Jan 2026) </li>
                   <li> Honored to receive research funding from Google in support of a year-long collaboration (October 2025) </li>
                   <li> <a href="https://arxiv.org/pdf/2412.14312">Stealing That Free Lunch: Exposing the Limits of Dyna-Style Reinforcement Learning</a> was accepted to <a href="https://icml.cc/Conferences/2025">ICML</a>. (May 2025) </li>
@@ -79,6 +80,34 @@ I study how to make synthetic data more reliable and effective for scaling AI tr
             </td>
           </tr>
         </table>
+
+<!-- ===== Scaling pretrained representations (label-free OOD) ===== -->
+<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr>
+      <td style="padding:16px;width:30%;vertical-align:middle">
+        <div class="one">
+          <img src="images/ScalingPretrainedOOD.png" style="width:240px; height:auto;" alt="ReSCOPED and Mahalanobis score histograms across DINOv3 ViT scales (CIFAR-10 ID vs CIFAR-100 OOD)">
+        </div>
+      </td>
+      <td style="padding:8px;width:60%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2605.05638">
+          <span class="papertitle">Scaling Pretrained Representations Enables Label-Free Out-of-Distribution Detection Without Fine-Tuning
+          </span>
+        </a>
+        <br>
+        <strong>Brett Barkley</strong>, Preston Culbertson, David Fridovich-Keil
+        <br>
+        <em>Preprint</em>, 2026
+        <br>
+        <a href="https://arxiv.org/abs/2605.05638">arXiv</a>
+        <p></p>
+        <p>
+          We show that label-free OOD detection is increasingly a property of representation geometry rather than detector complexity. ReSCOPED serves as a local diffusion-based typicality probe, while Mahalanobis serves as a global geometric baseline; their convergence under stronger frozen backbones suggests that modern representations already organize OOD-relevant structure. Practically, this enables lightweight OOD gates for downstream systems, including query rejection before a model answers confidently on inputs outside its reliable domain.        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- ===== FTFL (Fixing That Free Lunch) ===== -->
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -123,7 +152,7 @@ I study how to make synthetic data more reliable and effective for scaling AI tr
           <span class="papertitle">SCOPED: Score–Curvature Out-of-Distribution Proximity Evaluator for Diffusion</span>
         </a>
         <br>
-        <strong>Brett Barkley</strong>, David Fridovich-Keil  
+        <strong>Brett Barkley</strong>, Preston Culbertson, David Fridovich-Keil  
         <br>
         <em>ICLR</em>, 2026  
         <br>
